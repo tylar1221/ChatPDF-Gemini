@@ -29,12 +29,18 @@ else:
     chat_history = []
 
 
-def get_pdf_text(pdf_docs):
+dedef get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
         pdf_reader = PdfReader(pdf)
         for page in pdf_reader.pages:
-            text += page.extract_text()
+            page_text = page.extract_text()
+            if page_text:
+                text += page_text
+            else:
+                st.warning(f"Page {pdf_reader.pages.index(page) + 1} in {pdf.name} is empty.")
+    if not text.strip():
+        raise ValueError("No text could be extracted from the uploaded PDFs.")
     return text
 
 
