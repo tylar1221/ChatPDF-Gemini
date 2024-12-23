@@ -29,7 +29,7 @@ else:
     chat_history = []
 
 
-dedef get_pdf_text(pdf_docs):
+def get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
         pdf_reader = PdfReader(pdf)
