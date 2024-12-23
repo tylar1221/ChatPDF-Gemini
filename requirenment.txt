@@ -9,3 +9,4 @@ joblib
 python-docx
 fpdf
 faiss-cpu
+PyPDF2
