@@ -39,6 +39,7 @@
 2. Ask questions related to the content of the uploaded PDFs.
 3. View and download the chat history in Word or PDF format.
 4. Clear chat history with the button provided in the sidebar.
+![image](https://github.com/user-attachments/assets/989c37c2-f752-4a5b-882a-b1d096604907)
 
 ## Contributing
 
